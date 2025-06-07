@@ -93,9 +93,3 @@ If you use this work, please cite:
   year={2025}
 }
 ```
-
-## 📬 Contact
-
-For questions or collaborations, please contact:  
-**Your Name**  
-*Email: your.email@domain.com*
