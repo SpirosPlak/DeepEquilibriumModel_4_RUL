@@ -11,6 +11,26 @@ The work presents a novel approach leveraging **Deep Equilibrium Models (DEMs)**
 - **Bayesian Inference**: Used for uncertainty quantification in RUL prediction.
 - **Dataset**: NASA’s C-MAPSS dataset for turbofan engine degradation simulation.
 
+Estimating Remaining Useful Life (RUL) is crucial in modern Prognostic and
+Health Management (PHM) systems providing valuable information for planning the
+maintenance strategy of critical components in complex systems such as aircraft engines.
+Deep Learning (DL) models have shown great performance in the accurate prediction
+of RUL, building hierarchical representations by the stacking of multiple explicit neural
+layers. In the current research paper, we follow a different approach presenting a Deep
+Equilibrium Model (DEM) that effectively captures the spatial and temporal information
+of the sequential sensor. The DEM, which incorporates convolutional layers and a novel
+dual-input interconnection mechanism to capture sensor information effectively, estimates
+the degradation representation implicitly as the equilibrium solution of an equation, rather
+than explicitly computing it through multiple layer passes. The convergence representation
+of the DEM is estimated by a fixed-point equation solver while the computation of the
+gradients in the backward pass is made using the Implicit Function Theorem (IFT). The
+Monte Carlo Dropout (MCD) technique under calibration is the final key component of
+the framework that enhances regularization and performance providing a confidence
+interval for each prediction, contributing to a more robust and reliable outcome. Simulation
+experiments on the widely used NASA Turbofan Jet Engine Data Set show consistent
+improvements, with the proposed framework offering a competitive alternative for RUL
+prediction under diverse conditions.
+
 ## 📂 Repository Structure
 
 - `rul-predictions-DEM_Bayessian.ipynb`: Main Jupyter notebook implementing the DEM with Bayesian RUL prediction.
