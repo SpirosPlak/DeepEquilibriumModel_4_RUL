@@ -86,10 +86,17 @@ This model achieves competitive RUL prediction performance on the C-MAPSS datase
 If you use this work, please cite:
 
 ```bibtex
-@article{your2025deep,
-  title={A Deep Equilibrium Model for Remaining Useful Life of Aircraft Engines},
-  author={Your Name and Coauthors},
-  journal={Journal/Conference Name},
-  year={2025}
+@Article{electronics14122355,
+AUTHOR = {Plakias, Spyridon and Boutalis, Yiannis S.},
+TITLE = {A Deep Equilibrium Model for Remaining Useful Life Estimation of Aircraft Engines},
+JOURNAL = {Electronics},
+VOLUME = {14},
+YEAR = {2025},
+NUMBER = {12},
+ARTICLE-NUMBER = {2355},
+URL = {https://www.mdpi.com/2079-9292/14/12/2355},
+ISSN = {2079-9292},
+ABSTRACT = {Estimating Remaining Useful Life (RUL) is crucial in modern Prognostic and Health Management (PHM) systems providing valuable information for planning the maintenance strategy of critical components in complex systems such as aircraft engines. Deep Learning (DL) models have shown great performance in the accurate prediction of RUL, building hierarchical representations by the stacking of multiple explicit neural layers. In the current research paper, we follow a different approach presenting a Deep Equilibrium Model (DEM) that effectively captures the spatial and temporal information of the sequential sensor. The DEM, which incorporates convolutional layers and a novel dual-input interconnection mechanism to capture sensor information effectively, estimates the degradation representation implicitly as the equilibrium solution of an equation, rather than explicitly computing it through multiple layer passes. The convergence representation of the DEM is estimated by a fixed-point equation solver while the computation of the gradients in the backward pass is made using the Implicit Function Theorem (IFT). The Monte Carlo Dropout (MCD) technique under calibration is the final key component of the framework that enhances regularization and performance providing a confidence interval for each prediction, contributing to a more robust and reliable outcome. Simulation experiments on the widely used NASA Turbofan Jet Engine Data Set show consistent improvements, with the proposed framework offering a competitive alternative for RUL prediction under diverse conditions.},
+DOI = {10.3390/electronics14122355}
 }
 ```
